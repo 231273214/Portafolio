@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portafolio/static/css/main.cf4189b3.css",
-    "main.js": "/Portafolio/static/js/main.d1d29911.js",
+    "main.js": "/Portafolio/static/js/main.caba3391.js",
     "static/media/Montserrat-VariableFont_wght.ttf": "/Portafolio/static/media/Montserrat-VariableFont_wght.4df14eb5e72bf55c4497.ttf",
     "static/media/fa-solid-900.ttf": "/Portafolio/static/media/fa-solid-900.2582b0e4bcf85eceead0.ttf",
     "static/media/fa-brands-400.ttf": "/Portafolio/static/media/fa-brands-400.1815e00441357e01619e.ttf",
@@ -13,10 +13,10 @@
     "static/media/fa-v4compatibility.woff2": "/Portafolio/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
     "index.html": "/Portafolio/index.html",
     "main.cf4189b3.css.map": "/Portafolio/static/css/main.cf4189b3.css.map",
-    "main.d1d29911.js.map": "/Portafolio/static/js/main.d1d29911.js.map"
+    "main.caba3391.js.map": "/Portafolio/static/js/main.caba3391.js.map"
   },
   "entrypoints": [
     "static/css/main.cf4189b3.css",
-    "static/js/main.d1d29911.js"
+    "static/js/main.caba3391.js"
   ]
 }
