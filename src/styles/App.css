@@ -1,0 +1,331 @@
+/* src/styles/App.css */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/public/Fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #5A639C;
+  color: white;
+}
+
+.container {
+  max-width: 800px; 
+  margin: 0 auto;
+  padding: 0 20px; 
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+  padding-right: 10px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+section {
+  padding: 4rem 1rem;
+  scroll-margin-top: 100px;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+/* -------------------------------------------
+  Sección de Navbar
+------------------------------------------- */
+
+.navbar {
+  background-color: rgba(45, 43, 64, 0.75); 
+  backdrop-filter: blur(8px);             
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+}
+
+.navbar img {
+  border-radius: 50px;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.navbar a {
+  color: #00FFC2;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.navbar a:hover {
+  color: #ffffff;
+}
+
+
+/* -------------------------------------------
+  Sección de Hero
+------------------------------------------- */
+
+.hero {
+  padding: 4rem 1rem;
+}
+
+.hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.hero-text {
+  flex: 1 1 300px;
+}
+
+.hero-text h1 {
+  font-size: 2rem;
+  color: #00FFD1;
+}
+
+.hero-text h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.hero-text p {
+  color: #ccc;
+  margin-bottom: 1rem;
+  max-width: 500px;
+}
+
+.hero-img {
+  flex: 0 0 auto;
+}
+
+.hero-img img {
+  width: 180px;
+  height: auto;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+
+
+
+/* -------------------------------------------
+  Sección de about
+------------------------------------------- */ 
+
+.about {
+  max-width: 800px;
+  margin: auto;
+}
+
+.about h2 {
+  color: #00FFC2;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* -------------------------------------------
+  Sección de Skills
+------------------------------------------- */
+
+.skills-section {
+  padding: 60px 30px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.skills-title {
+  font-size: 28px;
+  color: #00FFD1;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.tab-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 2rem;
+}
+
+.tab-buttons button {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #2d2b40;
+  color: #00FFD1;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tab-buttons button:hover {
+  background-color: #4e4383;
+}
+
+.tab-buttons button.active {
+  background-color: #00FFD1;
+  color: #2d2b40;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.skill-card {
+  background-color: #3a2e63;
+  border-radius: 12px;
+  padding: 16px 20px;
+  width: 120px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  text-align: center;
+  cursor: default;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  background-color: #5c4fa0;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.skill-icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* -------------------------------------------
+  Sección de Projects
+------------------------------------------- */
+.projects-section {
+  background-color: #5A639C;
+  padding: 60px 30px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.projects-title {
+  font-size: 28px;
+  color: #00FFD1;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+@media (min-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.project-card {
+  background-color: #4b2784;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease-in-out;
+}
+
+.project-card:hover {
+  transform: scale(1.02);
+}
+
+.project-image {
+  height: auto;
+  background-color: #b8b1bd;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain; 
+}
+
+
+
+.project-image img:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+}
+
+
+.project-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #00FFD1;
+  margin-bottom: 10px;
+}
+
+.project-description {
+  font-size: 14px;
+  color: #e0e0e0;
+  margin-bottom: 16px;
+}
+
+.project-tech {
+  display: flex;
+  gap: 10px;
+}
+
+.tech-icon {
+  width: 28px;
+  height: 28px;
+}
+
+.tech-icons {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+}
+.tech-icons a img {
+  transition: transform 0.3s ease;
+}
+
+.tech-icons a:hover img {
+  transform: scale(1.2);
+}
