@@ -3,22 +3,23 @@ import { useState } from "react";
 const Skills = () => {
     const [activeTab, setActiveTab] = useState("tech");
 
-    const techSkills = [
-        { name: "HTML5", icon: "/assets/icons/html.png" },
-        { name: "CSS3", icon: "/assets/icons/css.png" },
-        { name: "JavaScript", icon: "/assets/icons/js.png" },
-        { name: "TypeScript", icon: "/assets/icons/typescript.png" },
-        { name: "React", icon: "/assets/icons/react.png" },
-        { name: "Angular", icon: "/assets/icons/angular.svg" },
-        { name: "PHP", icon: "/assets/icons/php.png" },
-    ];
+const techSkills = [
+    { name: "HTML5", icon: process.env.PUBLIC_URL + "/assets/icons/html.png" },
+    { name: "CSS3", icon: process.env.PUBLIC_URL + "/assets/icons/css.png" },
+    { name: "JavaScript", icon: process.env.PUBLIC_URL + "/assets/icons/js.png" },
+    { name: "TypeScript", icon: process.env.PUBLIC_URL + "/assets/icons/typescript.png" },
+    { name: "React", icon: process.env.PUBLIC_URL + "/assets/icons/react.png" },
+    { name: "Angular", icon: process.env.PUBLIC_URL + "/assets/icons/angular.svg" },
+    { name: "PHP", icon: process.env.PUBLIC_URL + "/assets/icons/php.png" },
+];
 
-    const artPrograms = [
-        { name: "Blender", icon: "/assets/icons/blender.svg" },
-        { name: "Substance", icon: "/assets/icons/substance.png" },
-        { name: "After Effects", icon: "/assets/icons/after-effects.png" },
-        { name: "Premiere", icon: "/assets/icons/premiere.png" },
-    ];
+const artPrograms = [
+    { name: "Blender", icon: process.env.PUBLIC_URL + "/assets/icons/blender.svg" },
+    { name: "Substance", icon: process.env.PUBLIC_URL + "/assets/icons/substance.png" },
+    { name: "After Effects", icon: process.env.PUBLIC_URL + "/assets/icons/after-effects.png" },
+    { name: "Premiere", icon: process.env.PUBLIC_URL + "/assets/icons/premiere.png" },
+];
+
 
     const skillsToShow = activeTab === "tech" ? techSkills : artPrograms;
 
