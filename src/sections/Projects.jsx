@@ -5,28 +5,28 @@ const Projects = () => {
             description:
                 "E-commerce sobre un bar ubicado en Villavicencio que su principal producto son cocteles y shots.",
             tech: ["html5", "css", "js"],
-            image: process.env.PUBLIC_URL + "/assets/projects/Pagina-El_petaco_bar.png",
+            image: process.env.PUBLIC_URL + "/assets/Projects/Pagina-El_petaco_bar.png",
         },
         {
             title: "Cafe - E-commerce",
             description:
                 "E-commerce sobre una tienda de cafe en línea que vende cafe con hongos los cuales aportan beneficios en cuanto a la concentración, energía, etc.",
             tech: ["angular", "ts", "css", "html5"],
-            image: process.env.PUBLIC_URL + "/assets/projects/E-commerce_cafe.png",
+            image: process.env.PUBLIC_URL + "/assets/Projects/E-commerce_cafe.png",
         },
         {
             title: "Galería 3D",
             description:
                 "Página tematizada con el universo de Steven Universe, donde verás diferentes personajes de esta serie, información relevante de cada uno y un minijuego como decoración para la página.",
             tech: ["react", "ts", "css", "js", "html5"],
-            image: process.env.PUBLIC_URL + "/assets/projects/Pagina_3D.png",
+            image: process.env.PUBLIC_URL + "/assets/Projects/Pagina_3D.png",
         },
         {
             title: "Microservicio docentes",
             description:
                 "Página donde un docente puede interactuar con notas de estudiantes y sus diferentes materias. Este puede modificar y cancelar lo que desee, y se puede calcular si el estudiante aprueba o no.",
             tech: ["php", "js", "html5", "css"],
-            image: process.env.PUBLIC_URL + "/assets/projects/Microservicio_Docentes.png",
+            image: process.env.PUBLIC_URL + "/assets/Projects/Microservicio_Docentes.png",
         },
     ];
 
